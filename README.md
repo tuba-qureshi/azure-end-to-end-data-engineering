@@ -1,12 +1,12 @@
-###☁️ Azure End-to-End Data Engineering Project
+☁️ Azure End-to-End Data Engineering Project
 
 <p align="center">
-  <b>End-to-End Data Pipeline using Microsoft Azure</b>
+<b>End-to-End Data Pipeline using Microsoft Azure</b>
 </p><p align="center">
-  <img src="https://img.shields.io/badge/Azure-Cloud%20Data%20Engineering-0078D4?logo=microsoftazure&logoColor=white" />
-  <img src="https://img.shields.io/badge/ETL-Data%20Pipeline-orange" />
-  <img src="https://img.shields.io/badge/Apache%20Spark-PySpark-E25A1C?logo=apachespark&logoColor=white" />
-  <img src="https://img.shields.io/badge/Project-Learning%20Purpose-green" />
+<img src="https://img.shields.io/badge/Azure-Cloud%20Data%20Engineering-0078D4?logo=microsoftazure&logoColor=white" />
+<img src="https://img.shields.io/badge/ETL-Data%20Pipeline-orange" />
+<img src="https://img.shields.io/badge/Apache%20Spark-PySpark-E25A1C?logo=apachespark&logoColor=white" />
+<img src="https://img.shields.io/badge/Project-Learning%20Purpose-green" />
 </p>---
 
 🚀 Project Overview
@@ -30,7 +30,7 @@ Layer| Description
 
 Architecture Diagram
 
-"Azure End-to-End Data Engineering Architecture" (architecture/architecture-diagram.png)
+"Azure End-to-End Data Engineering Architecture" (02-architecture/architecture-diagram.png)
 
 ---
 
@@ -112,7 +112,7 @@ Dataset Files
 
 The source data is hosted on GitHub and accessed through raw file URLs for ingestion into Azure Data Factory.
 
-📁 "Explore Dataset" (dataset/)
+📁 "Explore Dataset" (01-dataset/)
 
 ---
 
@@ -127,7 +127,7 @@ The source data is hosted on GitHub and accessed through raw file URLs for inges
 - Linked services
 - Pipeline execution monitoring
 
-📁 "Explore Azure Data Factory" (azure-data-factory/)
+📁 "Explore Azure Data Factory" (03-azure-data-factory/)
 
 🔧 Azure Databricks
 
@@ -136,7 +136,7 @@ The source data is hosted on GitHub and accessed through raw file URLs for inges
 - Data processing
 - Silver layer notebook
 
-📁 "Explore Databricks" (databricks/)
+📁 "Explore Databricks" (04-databricks/)
 
 📊 Azure Synapse Analytics
 
@@ -144,7 +144,7 @@ The source data is hosted on GitHub and accessed through raw file URLs for inges
 - Schema creation
 - Analytical views
 
-📁 "Explore Synapse Analytics" (azure-synapse/)
+📁 "Explore Synapse Analytics" (05-azure-synapse/)
 
 ---
 
@@ -152,13 +152,13 @@ The source data is hosted on GitHub and accessed through raw file URLs for inges
 
 Detailed project files are organized within their respective folders.
 
-- 🏗️ "Architecture" (architecture/architecture.md)
-- 🔄 "Data Flow" (architecture/data-flow.md)
-- 📂 "Dataset Documentation" (dataset/README.md)
-- ⚙️ "Azure Data Factory Documentation" (azure-data-factory/README.md)
-- 🔧 "Databricks Documentation" (databricks/README.md)
-- 📊 "Synapse Documentation" (azure-synapse/README.md)
-- 📘 "Project Overview" (documentation/project-overview.md)
+- 🏗️ "Architecture" (02-architecture/architecture.md)
+- 🔄 "Data Flow" (02-architecture/data-flow.md)
+- 📂 "Dataset Documentation" (01-dataset/README.md)
+- ⚙️ "Azure Data Factory Documentation" (03-azure-data-factory/README.md)
+- 🔧 "Databricks Documentation" (04-databricks/README.md)
+- 📊 "Synapse Documentation" (05-azure-synapse/README.md)
+- 📘 "Project Overview" (08-documentation/project-overview.md)
 
 ---
 
@@ -166,12 +166,17 @@ Detailed project files are organized within their respective folders.
 
 azure-end-to-end-data-engineering/
 │
-├── architecture/
+├── 01-dataset/
+│   ├── raw-data/
+│   └── README.md
+│
+├── 02-architecture/
 │   ├── architecture-diagram.png
 │   ├── architecture.md
-│   └── data-flow.md
+│   ├── data-flow.md
+│   └── README.md
 │
-├── azure-data-factory/
+├── 03-azure-data-factory/
 │   ├── arm-template/
 │   ├── datasets/
 │   ├── linked-services/
@@ -179,21 +184,18 @@ azure-end-to-end-data-engineering/
 │   ├── screenshots/
 │   └── README.md
 │
-├── azure-synapse/
-│   └── sql-scripts/
-│
-├── databricks/
+├── 04-databricks/
 │   ├── notebooks/
 │   └── README.md
 │
-├── dataset/
-│   ├── raw-data/
+├── 05-azure-synapse/
+│   ├── sql-scripts/
 │   └── README.md
 │
-├── documentation/
-│   └── project-overview.md
+├── 07-visuals/
 │
-├── visuals/
+├── 08-documentation/
+│   └── project-overview.md
 │
 ├── .gitignore
 └── README.md
@@ -215,21 +217,18 @@ azure-end-to-end-data-engineering/
 ---
 
 🎓 Project Purpose
-
 This project was undertaken to gain practical exposure to Azure Data Engineering concepts and understand how multiple cloud services work together in a data pipeline.
-
 It serves as a learning reference for exploring data ingestion, storage, transformation, pipeline orchestration, and analytical processing.
 
 ---
 
 🙏 Credits
 
-This project is based on a YouTube tutorial by "Ansh Lamba" (https://www.youtube.com/@AnshLamba).
-
+This project is based on a YouTube tutorial by "Ansh Lamba" (https://www.youtube.com/@AnshLambaJSR).
 Completed for learning and educational purposes.
 
 ---
 
 <p align="center">
-  ⭐ Thank you for visiting this repository!
+⭐ Thank you for visiting this repository!
 </p>
