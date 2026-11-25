@@ -1,0 +1,45 @@
+Data Flow
+
+1. Data Source
+
+The pipeline starts with source data files containing raw data that needs to be ingested into the Azure data platform.
+
+2. Data Ingestion – Azure Data Factory
+
+Azure Data Factory automates the ingestion process through a parameterized pipeline.
+
+The pipeline uses the following activities:
+
+- Lookup: Retrieves the information required for pipeline execution.
+- ForEach: Iterates through the configured items.
+- Copy Data: Copies data from the source into Azure Data Lake Storage.
+
+3. Data Storage – Azure Data Lake Storage Gen2
+
+The data is organized into three layers:
+
+- Bronze: Stores raw ingested data.
+- Silver: Stores cleaned and transformed data.
+- Gold: Stores data prepared for analytical purposes.
+
+4. Data Processing – Azure Databricks
+
+Azure Databricks provides a Spark-based environment for processing and transforming data using PySpark.
+
+5. Data Analytics – Azure Synapse Analytics
+
+Azure Synapse Analytics is used to query and access data using SQL. It supports working with external data through objects such as views and external tables.
+
+6. Pipeline Workflow
+
+1. Source data is made available for ingestion.
+2. Azure Data Factory retrieves the required configuration using Lookup.
+3. ForEach iterates over the configured items.
+4. Copy Data activity ingests the source data into Azure Data Lake Storage.
+5. Data is organized across the Bronze, Silver, and Gold layers for different processing stages.
+6. Databricks provides the environment for Spark-based data transformation.
+7. Synapse Analytics enables SQL-based data access and analysis.
+
+End-to-End Flow
+
+Source Data → Azure Data Factory → Azure Data Lake Storage Gen2 → Azure Databricks → Azure Synapse Analytics
