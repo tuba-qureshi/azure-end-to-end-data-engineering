@@ -13,7 +13,7 @@
 
 This project demonstrates an end-to-end data engineering workflow using Microsoft Azure services.
 
-The project integrates multiple cloud services to ingest data from GitHub, store data in Azure Data Lake Storage Gen2, process and transform data using Azure Databricks, and prepare data for analytics using Azure Synapse Analytics.
+It integrates multiple cloud services to ingest data from GitHub, store data in Azure Data Lake Storage Gen2, process and transform data using Azure Databricks, and prepare data for analytics using Azure Synapse Analytics.
 
 The workflow covers different stages of data engineering, from source data ingestion to data processing and analytical preparation.
 
@@ -36,32 +36,29 @@ Architecture Diagram
 
 🔄 Project Workflow
 
-📂 GitHub
-    │
-    ▼
-⚙️ Azure Data Factory
-    │
-    ▼
-🗄️ Azure Data Lake Storage Gen2
-    │
-    ├── 🥉 Bronze Layer
-    │
-    ▼
-🔧 Azure Databricks
-    │
-    ├── 🥈 Silver Layer
-    │
-    ▼
-🥇 Gold Layer
-    │
-    ▼
-📊 Azure Synapse Analytics
+📥 Source Data → GitHub (AdventureWorks CSV datasets)
+
+⬇️
+
+⚙️ Data Ingestion → Azure Data Factory
+
+⬇️
+
+🗄️ Data Storage → Azure Data Lake Storage Gen2
+
+⬇️
+
+🔧 Data Transformation → Azure Databricks & PySpark
+
+⬇️
+
+📊 Analytics → Azure Synapse Analytics
 
 Workflow Description
 
 📥 1. Source Data
 
-AdventureWorks CSV datasets are hosted on GitHub and serve as the source for data ingestion.
+AdventureWorks CSV datasets hosted on GitHub serve as the source data for the project.
 
 ⚙️ 2. Data Ingestion
 
@@ -113,13 +110,13 @@ Dataset Files
 - 📈 "AdventureWorks_Sales_2017.csv"
 - 🌍 "AdventureWorks_Territories.csv"
 
-Source data is hosted on GitHub and accessed through raw file URLs for ingestion into Azure Data Factory.
+The source data is hosted on GitHub and accessed through raw file URLs for ingestion into Azure Data Factory.
 
 📁 "Explore Dataset" (dataset/)
 
 ---
 
-📚 Project Components
+⚙️ Project Components
 
 ⚙️ Azure Data Factory
 
@@ -151,9 +148,9 @@ Source data is hosted on GitHub and accessed through raw file URLs for ingestion
 
 ---
 
-📖 Documentation
+📚 Project Documentation
 
-Project documentation and reference materials are organized within the repository.
+Detailed project files are organized within their respective folders.
 
 - 🏗️ "Architecture" (architecture/architecture.md)
 - 🔄 "Data Flow" (architecture/data-flow.md)
