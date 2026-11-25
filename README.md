@@ -1,76 +1,180 @@
-Azure End-to-End Data Engineering Project
+☁️ Azure End-to-End Data Engineering Project
 
-Project Overview
+<p align="center">
+  <b>End-to-End Data Pipeline using Microsoft Azure</b>
+</p><p align="center">
+  <img src="https://img.shields.io/badge/Azure-Cloud%20Data%20Engineering-0078D4?logo=microsoftazure&logoColor=white" />
+  <img src="https://img.shields.io/badge/ETL-Data%20Pipeline-orange" />
+  <img src="https://img.shields.io/badge/Apache%20Spark-PySpark-E25A1C?logo=apachespark&logoColor=white" />
+  <img src="https://img.shields.io/badge/Project-Learning%20Purpose-green" />
+</p>---
 
-This project demonstrates an end-to-end data engineering workflow using Microsoft Azure services. It involves ingesting AdventureWorks datasets from GitHub, storing data in Azure Data Lake Storage Gen2, processing and transforming data using Azure Databricks, and preparing data for analytics using Azure Synapse Analytics.
+🚀 Project Overview
 
-The project integrates multiple Azure services to demonstrate a data pipeline workflow from source data ingestion to analytical data processing.
+This project demonstrates an end-to-end data engineering workflow using Microsoft Azure services.
 
-Architecture
+The project integrates multiple cloud services to ingest data from GitHub, store data in Azure Data Lake Storage Gen2, process and transform data using Azure Databricks, and prepare data for analytics using Azure Synapse Analytics.
+
+The workflow covers different stages of data engineering, from source data ingestion to data processing and analytical preparation.
+
+---
+
+🏗️ Architecture
 
 The project follows a layered data architecture consisting of Bronze, Silver, and Gold layers.
 
-- Bronze Layer: Stores the ingested source data.
-- Silver Layer: Used for data processing and transformation.
-- Gold Layer: Used to prepare data for analytical consumption.
+Layer| Description
+🥉 Bronze| Stores ingested source data
+🥈 Silver| Handles data processing and transformations
+🥇 Gold| Prepares data for analytical consumption
 
 Architecture Diagram
 
-"Azure End-to-End Data Engineering Architecture" (02-architecture/architecture-diagram.png)
+"Azure End-to-End Data Engineering Architecture" (architecture/architecture-diagram.png)
 
-Project Workflow
+---
 
-1. Source Data – AdventureWorks CSV datasets hosted on GitHub.
-2. Data Ingestion – Azure Data Factory retrieves source files using HTTP-based connections and dynamically ingests the data.
-3. Data Storage – Azure Data Lake Storage Gen2 stores the ingested data within the data lake architecture.
-4. Data Transformation – Azure Databricks and PySpark are used for data processing and transformation.
-5. Analytics – Azure Synapse Analytics is used for SQL-based analytical processing and views.
+🔄 Project Workflow
 
-Technology Stack
+📂 GitHub
+    │
+    ▼
+⚙️ Azure Data Factory
+    │
+    ▼
+🗄️ Azure Data Lake Storage Gen2
+    │
+    ├── 🥉 Bronze Layer
+    │
+    ▼
+🔧 Azure Databricks
+    │
+    ├── 🥈 Silver Layer
+    │
+    ▼
+🥇 Gold Layer
+    │
+    ▼
+📊 Azure Synapse Analytics
+
+Workflow Description
+
+📥 1. Source Data
+
+AdventureWorks CSV datasets are hosted on GitHub and serve as the source for data ingestion.
+
+⚙️ 2. Data Ingestion
+
+Azure Data Factory retrieves source files through HTTP-based connections and dynamically ingests the data.
+
+🗄️ 3. Data Storage
+
+Azure Data Lake Storage Gen2 is used to store data within the data lake architecture.
+
+🔧 4. Data Transformation
+
+Azure Databricks and PySpark are used for data processing and transformation.
+
+📊 5. Analytics
+
+Azure Synapse Analytics is used for SQL-based analytical processing and views.
+
+---
+
+🛠️ Technologies Used
 
 Technology| Purpose
-Microsoft Azure| Cloud platform
-Azure Data Factory| Data ingestion and pipeline orchestration
-Azure Data Lake Storage Gen2| Data lake storage
-Azure Databricks| Data processing and transformation
-Apache Spark| Distributed data processing
-PySpark| Data transformation using Python
-Azure Synapse Analytics| SQL analytics and views
-SQL| Querying and analytical processing
-GitHub| Source datasets and version control
+☁️ Microsoft Azure| Cloud platform
+⚙️ Azure Data Factory| Data ingestion and pipeline orchestration
+🗄️ Azure Data Lake Storage Gen2| Data lake storage
+🔧 Azure Databricks| Data processing and transformation
+⚡ Apache Spark| Distributed data processing
+🐍 PySpark| Data transformation using Python
+📊 Azure Synapse Analytics| SQL analytics and views
+📝 SQL| Querying and analytical processing
+🐙 GitHub| Source data and version control
 
-Data Source
+---
+
+📂 Dataset
 
 The project uses AdventureWorks datasets in CSV format.
 
-The source datasets include:
+Dataset Files
 
-- Calendar
-- Customers
-- Product Categories
-- Product Subcategories
-- Products
-- Returns
-- Sales (2015, 2016, 2017)
-- Territories
+- 📅 "AdventureWorks_Calendar.csv"
+- 👥 "AdventureWorks_Customers.csv"
+- 🗂️ "AdventureWorks_Product_Categories.csv"
+- 📦 "AdventureWorks_Product_Subcategories.csv"
+- 🛍️ "AdventureWorks_Products.csv"
+- ↩️ "AdventureWorks_Returns.csv"
+- 📈 "AdventureWorks_Sales_2015.csv"
+- 📈 "AdventureWorks_Sales_2016.csv"
+- 📈 "AdventureWorks_Sales_2017.csv"
+- 🌍 "AdventureWorks_Territories.csv"
 
-The source data is hosted on GitHub and accessed through raw file URLs for ingestion into Azure Data Factory.
+Source data is hosted on GitHub and accessed through raw file URLs for ingestion into Azure Data Factory.
 
-Repository Structure
+📁 "Explore Dataset" (dataset/)
+
+---
+
+📚 Project Components
+
+⚙️ Azure Data Factory
+
+- Dynamic data ingestion
+- HTTP-based source connections
+- Pipeline orchestration
+- Dataset configuration
+- Linked services
+- Pipeline execution monitoring
+
+📁 "Explore Azure Data Factory" (azure-data-factory/)
+
+🔧 Azure Databricks
+
+- Apache Spark
+- PySpark
+- Data processing
+- Silver layer notebook
+
+📁 "Explore Databricks" (databricks/)
+
+📊 Azure Synapse Analytics
+
+- SQL scripts
+- Schema creation
+- Analytical views
+
+📁 "Explore Synapse Analytics" (azure-synapse/)
+
+---
+
+📖 Documentation
+
+Project documentation and reference materials are organized within the repository.
+
+- 🏗️ "Architecture" (architecture/architecture.md)
+- 🔄 "Data Flow" (architecture/data-flow.md)
+- 📂 "Dataset Documentation" (dataset/README.md)
+- ⚙️ "Azure Data Factory Documentation" (azure-data-factory/README.md)
+- 🔧 "Databricks Documentation" (databricks/README.md)
+- 📊 "Synapse Documentation" (azure-synapse/README.md)
+- 📘 "Project Overview" (documentation/project-overview.md)
+
+---
+
+📁 Repository Structure
 
 azure-end-to-end-data-engineering/
 │
-├── 01-dataset/
-│   ├── raw-data/
-│   └── README.md
-│
-├── 02-architecture/
+├── architecture/
 │   ├── architecture-diagram.png
 │   ├── architecture.md
-│   ├── data-flow.md
-│   └── README.md
+│   └── data-flow.md
 │
-├── 03-azure-data-factory/
+├── azure-data-factory/
 │   ├── arm-template/
 │   ├── datasets/
 │   ├── linked-services/
@@ -78,56 +182,57 @@ azure-end-to-end-data-engineering/
 │   ├── screenshots/
 │   └── README.md
 │
-├── 04-databricks/
+├── azure-synapse/
+│   └── sql-scripts/
+│
+├── databricks/
 │   ├── notebooks/
 │   └── README.md
 │
-├── 05-azure-synapse/
-│   ├── sql-scripts/
+├── dataset/
+│   ├── raw-data/
 │   └── README.md
 │
-├── 07-visuals/
-│
-├── 08-documentation/
+├── documentation/
 │   └── project-overview.md
+│
+├── visuals/
 │
 ├── .gitignore
 └── README.md
 
-Key Data Engineering Concepts
+---
 
-- Data ingestion from external sources
-- Pipeline orchestration
-- Dynamic data ingestion
-- Azure Data Lake Storage
-- Layered data architecture
-- Data processing and transformation
-- PySpark
-- SQL analytics
-- Cloud-based data engineering workflows
+🎯 Key Data Engineering Concepts
 
-Project Documentation
+- 🔄 Data ingestion
+- ⚙️ Pipeline orchestration
+- 📥 Dynamic data ingestion
+- 🗄️ Data lake storage
+- 🏗️ Layered data architecture
+- 🔧 Data processing and transformation
+- ⚡ Apache Spark & PySpark
+- 📝 SQL analytics
+- ☁️ Cloud-based data engineering workflows
 
-Detailed project files are organized within their respective folders:
+---
 
-- "Dataset" (01-dataset/README.md)
-- "Architecture" (02-architecture/README.md)
-- "Azure Data Factory" (03-azure-data-factory/README.md)
-- "Azure Databricks" (04-databricks/README.md)
-- "Azure Synapse Analytics" (05-azure-synapse/README.md)
-- "Project Overview" (08-documentation/project-overview.md)
+🎓 Project Purpose
 
-Disclaimer
+This project was undertaken to gain practical exposure to Azure Data Engineering concepts and understand how multiple cloud services work together in a data pipeline.
 
-This project was developed as a learning and portfolio project based on an end-to-end Azure Data Engineering workflow.
+It serves as a learning reference for exploring data ingestion, storage, transformation, pipeline orchestration, and analytical processing.
 
-This repository preserves project source files, datasets, notebook code, pipeline configurations, SQL scripts, architecture diagrams, and documentation. Azure resources, credentials, live services, and deployed infrastructure are not included.
+---
 
-Recreating and running the project requires configuring the necessary Azure resources and services.
+🙏 Credits
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------
-## Credits
-This project is based on a YouTube tutorial by [Ansh Lamba](https://www.youtube.com/@AnshLambaJSR).
+This project is based on a YouTube tutorial by "Ansh Lamba" (https://www.youtube.com/@AnshLamba).
+
 Completed for learning and educational purposes.
 
+---
 
+<p align="center">
+  ⭐ Thank you for visiting this repository!
+</p>
